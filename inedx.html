@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8"> <!-- codificação de caracteres, acentos, etc -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- meta; informações sobre a página (não são vistas) -->
   <title>Minha Lista</title>
-  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="CSS/style.css"> <!-- link rel = relacionar; href é o "link" -->
 </head>
 <body>
   <h1>Lista de Coisas</h1>
 
-  <form id="formMensagem">
-    <input id="mensagem" type="text" placeholder="Digite algo...">
-    <button type="button" onclick="adicionar()">Adicionar</button>
+  <form id="formMensagem"> <!-- form id identifica formulário -->
+    <input id="mensagem" type="text" placeholder="Digite algo..."> <!-- input id identifica campo -->
+    <button type="button" onclick="adicionar()">Adicionar</button> <!-- onclick clique simples (1) -->
   </form>
 
   <ul id="lista"></ul>
 
-  <script src="JS/script.js"></script>
+  <script src="JS/script.js"></script> <!-- script src importa JS externo (p conectar) -->
 </body>
 </html>

@@ -2,23 +2,23 @@ h1 {
   color: blueviolet;
 }
 
-ul#lista {
-  list-style: disc inside;
-  padding-left: 5px;
+ul#lista { /* seleciona <ul> com id="lista" */
+  list-style: disc inside; /* bolinha dentro do texto */
+  padding-left: 5px; /* espaço interno da esquerda */
 }
 
 ul#lista li {
   margin: 5px 0;
-  display: flex;
-  gap: 10px;
+  display: flex; /* organiza em linha com flexbox */
+  gap: 10px; /* espaço entre os itens da linha */
   align-items: center;
 }
 
 ul#lista button {
   background: red;
-  border: none;
+  border: none; /* sem borda nenhuma */
   color: white;
   padding: 3px 6px;
   cursor: pointer;
-  border-radius: 4px;
+  border-radius: 4px; /* cantos arredondados (quanto maior mais arredondado) */
 }
