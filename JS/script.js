@@ -32,7 +32,7 @@ function adicionar() {
     span.addEventListener("click", () => {
       input.value = span.textContent; // input.value é valor do campo
       editando = Array.from(lista.children).indexOf(li); // Array.from transforma em array; indexOf é a posição do li
-      botaoAdicionar.textContent = "Salvar"; // muda texto do botão para "editando"
+      botaoAdicionar.textContent = "Salvar"; // muda texto do botão para "Salvar"
     });
 
     // botão excluir
