@@ -1,5 +1,9 @@
+body {
+  background-color: lightpink;
+}
+
 h1 {
-  color: blueviolet;
+  color: rgb(122, 42, 89);
 }
 
 ul#lista { /* seleciona <ul> com id="lista" */

@@ -1,6 +1,7 @@
 const form = document.querySelector("#formMensagem"); // const não muda; querySelector seleciona elemento
 const input = document.querySelector("#mensagem");
 const lista = document.querySelector("#lista");
+const botaoAdicionar = document.querySelector("button[onclick='adicionar()']");
 
 let editando = null; // let pode mudar
 
@@ -18,6 +19,7 @@ function adicionar() {
     // se estiver editando, troca o texto
     lista.children[editando].querySelector("span").textContent = texto; // children pega filho, textContent troca texto
     editando = null; // sai da editação
+    botaoAdicionar.textContent = "Adicionar"; // volta texto do botão para "Adicionar"
   } else {
     // cria novo item
     const li = document.createElement("li"); // li cria item de lista
@@ -30,6 +32,7 @@ function adicionar() {
     span.addEventListener("click", () => {
       input.value = span.textContent; // input.value é valor do campo
       editando = Array.from(lista.children).indexOf(li); // Array.from transforma em array; indexOf é a posição do li
+      botaoAdicionar.textContent = "Salvar"; // muda texto do botão para "editando"
     });
 
     // botão excluir
